@@ -14,8 +14,22 @@ public class leet189 {
             k--;
         }
     }
+    //方法2
     public void rotate2(int[] nums, int k) {//2
-
+        k = k % nums.length;
+        int count = 0;
+        for(int start = 0;count< nums.length;start++){
+            int current = start;
+            int pre = nums[start];
+            do{
+                int next = (current+k)% nums.length;
+                int tmp = nums[next];
+                nums[next] = pre;
+                pre = tmp;
+                current = next;
+                count++;
+            }while(start!=current);
+        }
     }
 
 }

@@ -1,10 +1,10 @@
-class ListNode {
-    int val;
-    ListNode next = null;
-    ListNode(int val) {
-        this.val = val;
-    }
-}
+//class ListNode {
+//    int val;
+//    ListNode next = null;
+//    ListNode(int val) {
+//        this.val = val;
+//    }
+//}
 public class NC78 {
     public ListNode ReverseList(ListNode head) {
         ListNode node = new ListNode(0);

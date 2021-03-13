@@ -1,7 +1,11 @@
 public class leet172 {
-    //返回阶乘中的零的个数 找出个位为2和5的数量，比较2和5的最小数量加上结尾带零的数
+    //找出5的个数，每个5个数，出现包含一个5的数，每个25出现包含两个5的数，每隔125出现包含3个5的数
     public int trailingZeroes(int n) {
-
-        return 0;
+        int sum = 0;
+        while(n>0){
+            sum = sum + n/5;
+            n = n/5;
+        }
+        return sum;
     }
 }
